@@ -1,0 +1,18 @@
+spring:
+  batch:
+    schedule:
+      process:
+        txn: '*/5 * * * * *'
+    job:
+      enabled: false
+server:
+  port: 9090
+oauth:
+  client:
+    id: 'client_id'
+    secret: 'client_secret'
+  admin:
+    username: 'admin'
+    password: 'password'
+  grant:
+    type: 'password'
